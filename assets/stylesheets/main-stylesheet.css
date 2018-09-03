@@ -1,0 +1,902 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/********************************
+********************************/
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff0000;
+    z-index: 10;
+}
+
+
+/********************************/
+
+.header-section1 {
+    width: 100%;
+    padding: 7px 12px;
+    color: #fff;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+.header-section1 .head-content {
+    display: inline-block;
+    float: left;
+    font-size: 100%;
+    font-size: 16px;
+    font-family: 'GothamMedium';
+}
+
+.header-section1 .head-content span {
+    font-size: 11px;
+    color: #959595;
+    margin: 4px 0 0 10px;
+}
+
+.header-section1 .head-content img {
+    margin-bottom: -4px;
+}
+
+.header-section1 .utility {
+    display: inline-block;
+    float: right;
+    display: flex;
+    margin-right: 18px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.utility .social-links {
+    border-right: 2px solid #fff;
+    margin: 0 10px;
+}
+
+.utility .search form input[type="text"] {
+    width: 150px;
+}
+
+.utility .search form input[type="image"] {
+    border-style: none;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: -5px;
+}
+
+.social-links ul {
+    margin: 0;
+    padding: 0 12px;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.utility .social-links ul li a i {
+    color: #fff;
+}
+
+
+/********************************/
+
+#header .header-section2 {
+    width: 100%;
+    padding: 3px 12px;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 70%;
+    margin: 2px 0;
+    box-sizing: border-box;
+}
+
+#main-nav {
+    width: inherit;
+    text-align: right;
+    padding-top: 3px;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#main-nav .main-menu li {
+    display: inline-block;
+    /*    position: relative;*/
+}
+
+#main-nav .main-menu>li a {
+    color: #fff;
+    font-family: 'gotham_bookregular', sans-serif;
+    text-transform: capitalize;
+    padding: 19px 15px;
+    font-size: 12.5px;
+    position: relative;
+}
+
+#main-nav .main-menu>li a:hover {
+    transition: 1s;
+    color: #ff0000;
+    background-color: #fff;
+}
+
+#main-nav ul li:hover >.sub-menu {
+    display: block;
+}
+
+#main-nav .sub-menu {
+    width: 293px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: none;
+    padding: 0;
+}
+
+.sub-menu li {
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+    display: block !important;
+    position: relative;
+}
+
+.sub-menu li a {
+    padding: 10px 12px !important;
+    display: block;
+    height: auto;
+    color: #333333 !important;
+    font-weight: normal;
+    font-family: 'gotham_bookregular' !important;
+}
+
+.sub-menu li a:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.sub-menu li a i {
+    float: right;
+}
+
+.open-in-bottom {
+    position: absolute;
+    top: 100%;
+}
+
+.open-in-right {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+
+/*********************************
+**********************************/
+
+#banner {
+    width: 1271px;
+    max-height: 440px;
+    box-sizing: border-box;
+}
+
+
+#banner .wrapper {
+    margin-top: 84px;
+}
+
+#banner #main-slider {
+    width: 500%;
+    overflow: hidden;
+    height: 400px;
+}
+
+#banner #main-slider img {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+
+/************* SLIDER ****************/
+
+#main-slider {
+    animation: slider 20s alternate infinite;
+    position: relative;
+}
+
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    30% {
+        left: -100%;
+    }
+    40% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    60% {
+        left: -200%;
+    }
+    70% {
+        left: -300%;
+    }
+    80% {
+        left: -300%;
+    }
+    90% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.wrapper button {
+    width: 37px;
+    height: 119px;
+    position: absolute;
+    top: 33%;
+    z-index: 1;
+    background-color: transparent;
+    border-style: none;
+}
+
+.wrapper button.left-arrow {
+    background-image: url(../images/left-arrow-slide.png);
+    left: 0;
+}
+
+.wrapper button.right-arrow {
+    background-image: url(../images/right-arrow-slide.png);
+    right: 0;
+}
+
+
+/*************** SLIDER TRACK ******************/
+
+.slider-track {
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#banner .slider-track ul {
+    list-style: none;
+}
+
+.slider-track button {
+    width: 150px;
+    height: 10px;
+    background: #dfdfdf;
+    border-style: none;
+    animation: slidertrack 4s alternate;
+    animation-timing-function: step-end;
+}
+
+@keyframes slidertrack {
+    0% {
+        background: #ff0000;
+    }
+    15% {
+        background: #ff0000;
+    }
+    30% {
+        background: #ff0000 !important;
+    }
+    45% {
+        background-color: #dfdfdf !important;
+    }
+    60% {
+        background-color: #dfdfdf !important;
+    }
+    75% {
+        background-color: #dfdfdf !important;
+    }
+    90% {
+        background-color: #dfdfdf !important;
+    }
+    100% {
+        background-color: #dfdfdf !important;
+    }
+}
+
+
+/*
+@keyframes slidernav{
+    
+    0%{ background-color: #ff0000; }
+    100%{ background-color: #dfdfdf; }
+}
+*/
+
+.slider-track button:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider-track button:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slider-track button:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.slider-track button:nth-child(4) {
+    animation-delay: 12s;
+}
+
+.slider-track button:nth-child(5) {
+    animation-delay: 16s;
+}
+
+
+/***************************************/
+
+
+/***************************************/
+
+#main {
+    padding-top: 40px;
+}
+
+
+/***************SECTION 1****************/
+
+#main .section1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 30px 0;
+}
+
+#main .section1:after {
+    content: "";
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#main .section1>div {
+    width: 45%;
+    /*    border: 1px solid;*/
+}
+
+#main .section1 .content {
+    /*    position: relative;*/
+    margin: 0 10px;
+}
+
+#main .section1 .content .articleBy span {
+    color: red;
+}
+
+.label {
+    position: absolute;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.label a {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'gotham_bookregular';
+}
+
+.vertical-split-section {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f5f7f8;
+    margin: 20px 0;
+}
+
+.vertical-split-section div {
+    width: 50%;
+}
+
+.vertical-split-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .articleTitle {
+    font-size: 19px;
+    font-family: 'GothamBold';
+    color: #333;
+}
+
+.content .articleInfo {
+    font-size: 14px;
+    color: #333;
+    font-family: 'gotham_bookregular';
+    margin: 0;
+}
+
+.content .articleBy {
+    font-size: 13px;
+    color: #7c7c7c;
+    margin: 7px 0;
+    line-height: 20px;
+}
+
+.content .articleMore a {
+    font-size: 18px;
+    color: #f00;
+    font-family: 'gotham_bookregular';
+}
+
+.horizontal-split-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #f5f7f8;
+    margin: 20px 0;
+}
+
+.horizontal-split-section div {
+    width: 100%;
+}
+
+.horizontal-split-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-split-section .label {
+    width: 50% !important;
+}
+
+#main .section1 .vertical-split-section:first-child .label {
+    left: 0;
+    bottom: 0;
+    background-color: #8a57a2;
+}
+
+#main .section1 .vertical-split-section:nth-child(2) .content {
+    padding-top: 40px;
+    text-align: right;
+}
+
+#main .section1 .vertical-split-section:nth-child(2) .label {
+    right: 0;
+    top: 0;
+    background-color: #338428;
+    text-align: right;
+}
+
+.horizontal-split-section .label {
+    width: 100% !important;
+}
+
+#main .section1 .horizontal-split-section:first-child .label {
+    left: 0;
+    top: 0;
+    background-color: #e04e26;
+}
+
+#main .section1 .horizontal-split-section:nth-child(2) .content {
+    padding-top: 40px;
+    text-align: right;
+}
+
+#main .section1 .horizontal-split-section:nth-child(2) .label {
+    right: 0;
+    top: 0;
+    background-color: #fe0000;
+    text-align: right;
+}
+
+#main .section1 .vertical-split-section:last-child {
+    width: 100%;
+    margin: 0 20px;
+    height: 305px;
+    box-sizing: border-box;
+}
+
+#main .section1 .vertical-split-section:last-child div:nth-child(2) {
+    width: 30% !important;
+    margin: 0 0 0 10px;
+}
+
+#main .section1 .vertical-split-section:last-child .label {
+    width: 70% !important;
+    left: 0;
+    bottom: 0;
+    background-color: #fe0000;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+#main .section1 .vertical-split-section:last-child img {
+    width: 100%;
+}
+
+#main .section1 .slick-slide {
+    width: 72.5% !important;
+}
+
+
+/*************** SECTION 2 *****************/
+
+.section2 {
+    position: relative;
+    padding: 30px 0;
+}
+
+#main .section2:after {
+    content: "";
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.section2 .face-video video {
+    width: 100%;
+}
+
+.section2 .label {
+    position: initial;
+    font-size: 27px;
+    line-height: 25px;
+    font-family: 'GothamBold';
+    color: #f80000;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.section2 .video-thumbs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.section2 .video-thumbs .video-label {
+    padding: 35px 0;
+    box-sizing: border-box;
+    width: 14%;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f80000;
+    font-size: 22px;
+    font-family: 'GothamBold';
+    color: #fff;
+}
+
+.section2 .video-thumbs .thumb-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.thumb-list>div {
+    max-width: 23%;
+}
+
+.thumb-list div img {
+    height: 121px !important;
+    width: 193px !important;
+}
+
+.thumb-label {
+    color: #333333;
+    line-height: 16px;
+    margin-top: 5px;
+    font-family: 'GothamBold';
+    font-size: 100%;
+}
+
+
+/************** SECTION 3 ***************/
+
+.section3 {
+    position: relative;
+    padding: 30px 0;
+}
+
+#main .section3:after {
+    content: "";
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product-list>div {
+    flex: 1;
+    text-align: center;
+}
+
+.product-list h3 {
+    font-family: 'gotham_bookregular';
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.product-list img {
+    height: 244px;
+    display: inherit;
+    margin: 0 auto;
+}
+
+.section3 .slick-button {
+    top: 0;
+}
+
+
+/*************** SLICK BUTTONS ****************/
+
+.slick-button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    min-height: 14px;
+    margin: 20px 0;
+}
+
+.slick-button .left-slick {
+    border-style: none;
+    background: transparent;
+    background-image: url(../images/slick-arrows.png);
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.slick-button .left-slick:hover {
+    background-position: 0px -15px;
+}
+
+.slick-button .right-slick {
+    border-style: none;
+    background: transparent;
+    background-image: url(../images/slick-arrows.png);
+    background-position: right top;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.slick-button .right-slick:hover {
+    background-position: -14px -15px;
+}
+
+/*************** SECTION 4 ****************/
+.icon{
+    display: inline-block;
+    border: solid 7px;
+    border-radius: 50% 50%;
+    font-size: 34px;
+}
+
+
+
+.icon .fa-facebook{
+    color: #3b5999;
+    background-color: #fff;
+}
+icon .fa-twitter{
+    color : #00abf4 ;
+    background-color: #fff;
+}
+.icon .fa-rss{
+    color: #fe9900;
+    background-color: #fff;
+}
+/**************** FOOTER *****************/
+
+#footer-top {
+    width: 100%;
+    background-color: #333333;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#footer-top>.container {
+    position: relative;
+}
+
+#footer-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-top ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'gotham_bookregular';
+    font-size: 12px;
+    font-weight: 100 !important;
+}
+
+#footer-top .foot-nav {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+    margin-bottom: 20px;
+}
+
+#footer-top h2 {
+    color: #fff;
+    margin: 0;
+    padding: 30px 0 10px 0;
+    font-size: 16px;
+    font-family: 'gotham_bookregular';
+}
+
+.foot-nav ul li {
+    margin: 3px 0;
+}
+
+.secondary-nav {
+    display: inline-block;
+}
+
+.secondary-nav ul {
+    padding: 20px 0 !important;
+    box-sizing: border-box;
+}
+
+.secondary-nav ul li {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.secondary-nav ul li a:hover {
+    transition: 1s;
+    color: #ff0000 !important;
+}
+
+.foot-nav ul li a:hover {
+    transition: 1s;
+    color: #ff0000 !important;
+}
+
+.foot-social-links {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+}
+
+.foot-social-links i.fa {
+    color: #fff;
+    font-size: 22px;
+}
+
+.foot-social-links ul li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.contact-info {
+    position: absolute;
+    right: 0;
+    top: 6%;
+    color: #fff;
+    text-align: right;
+    line-height: 40px;
+}
+
+.contact-info span {
+    font: 14px 'gotham_bookregular';
+}
+
+.contact-info i.fa {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/*********************************
+**********************************/
+
+#footer {
+    width: 100%;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#footer>.container {
+    width: 1000px !important;
+}
+
+.site-nav {
+    float: left;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav ul li {
+    display: inline-block;
+    padding: 0 7px;
+    position: relative;
+}
+
+.site-nav ul li:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #fff;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.site-nav ul li:last-child:after {
+    border-style: none !important;
+}
+
+.site-nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'gotham_bookregular', sans-serif;
+}
+
+.copyrights {
+    float: right;
+    color: #fff;
+    margin: 18px 0 0 0;
+}
